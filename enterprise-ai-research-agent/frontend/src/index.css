@@ -1,0 +1,39 @@
+:root {
+  --bg: #F6F5F1;
+  --surface: #FFFFFF;
+  --ink: #14181C;
+  --ink-soft: #4B535A;
+  --line: #E1DFD8;
+  --accent: #0F6E5F;
+  --accent-soft: #E4F0EC;
+  --warn: #B8860B;
+  --warn-soft: #FBF3E1;
+  --mono: "JetBrains Mono", monospace;
+  --display: "Space Grotesk", sans-serif;
+  --body: "Inter", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
